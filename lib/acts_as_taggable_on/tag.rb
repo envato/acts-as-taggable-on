@@ -2,7 +2,8 @@ module ActsAsTaggableOn
   class Tag < ::ActiveRecord::Base
     include ActsAsTaggableOn::Utils
 
-    attr_accessible :name
+    # rails 4 says no thanks
+    # attr_accessible :name
 
     ### ASSOCIATIONS:
 
